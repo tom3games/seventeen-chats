@@ -450,6 +450,7 @@
     if (!$('#vTitle').hidden) titleStack()
     for (const r of rows) r._k = ''
     if ($('#rLog')) { $('#rLog')._k = ''; $('#chips')._k = '' }
+    if (ui.room && !ui.room.grp) { $('#rName').textContent = tx(P(ui.room.id).name); $('#rTag').textContent = tx(P(ui.room.id).tag) }
   }
 
   // ---- 押す
